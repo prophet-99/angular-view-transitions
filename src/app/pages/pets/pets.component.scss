@@ -1,0 +1,18 @@
+.sh-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sh-card {
+  max-width: 350px;
+  &__header {
+    margin-bottom: 0.5rem;
+  }
+  &__img {
+    height: 280px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+  }
+}

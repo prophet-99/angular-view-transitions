@@ -1,0 +1,29 @@
+<section class="sh-flex-container">
+  <mat-card class="sh-card" appearance="outlined" *ngFor="let pet of pets$ | async">
+    <mat-card-header class="sh-card__header">
+      <mat-card-title>{{ pet.breed | titlecase }}</mat-card-title>
+      <mat-card-subtitle>Dog</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      mat-card-image
+      [style]="'view-transition-name: transition-' + pet.breed"
+      class="sh-card__img"
+      [src]="pet.imageURL"
+      [alt]="pet.breed"
+    />
+    <mat-card-content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Optio laborum repellendus ...
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-button
+        routerLink="/pets/{{ pet.breed }}"
+      >
+        Show more
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>

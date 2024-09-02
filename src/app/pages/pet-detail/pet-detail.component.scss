@@ -1,0 +1,27 @@
+.sh-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.sh-petdet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  &__thumbnail {
+    flex-shrink: 0;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+  &__description {
+    flex-basis: 50%;
+  }
+}

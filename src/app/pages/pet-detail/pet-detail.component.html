@@ -1,0 +1,25 @@
+<section class="sh-title">
+  <button mat-icon-button routerLink="/pets">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+  <h1>{{ pet?.breed | titlecase }}</h1>
+</section>
+
+<section class="sh-petdet">
+  <img
+    [style]="'view-transition-name: transition-' + pet?.breed"
+    class="sh-petdet__thumbnail"
+    [src]="pet?.imageURL"
+  />
+  <article class="sh-petdet__description">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione quisquam iste temporibus voluptates amet qui minima, praesentium suscipit itaque magnam quos quis molestias quidem delectus. Earum adipisci laborum est.
+      A saepe placeat assumenda atque explicabo nemo aliquam neque alias illo culpa, corrupti, voluptatibus deserunt sed commodi officiis, perferendis tempora. Laboriosam rerum officia odit earum ratione unde ipsa vel quis!
+      Voluptate est numquam quis quaerat quia quam illum iure, asperiores quisquam tempora a officia id, excepturi rerum magni reiciendis pariatur amet vero et? Cumque perspiciatis vero, adipisci ad qui explicabo!
+      Eveniet temporibus consequuntur expedita dignissimos quidem consequatur exercitationem quam, similique voluptates, excepturi ex sequi autem. Cum, incidunt. Saepe tenetur in, distinctio hic nisi, quibusdam voluptas quos doloremque vero quisquam asperiores?
+      A assumenda voluptatem velit sequi corporis ex reprehenderit accusantium distinctio, hic sapiente ut eum dignissimos commodi nulla debitis mollitia suscipit voluptatum. Nostrum, quas architecto voluptate accusamus recusandae impedit aliquam adipisci?
+      Voluptas explicabo adipisci quis nisi. Earum a nostrum magnam sint, doloremque vitae, error dicta, nemo quia nihil autem cumque ut veritatis minus praesentium ipsam voluptatem distinctio odio repellat asperiores repellendus?
+      Autem, repellendus, sequi fuga aperiam quis itaque quaerat hic, ipsa labore ab cum sit non deleniti voluptatibus. Deserunt animi, minus laborum rem facilis dolores nobis vitae nulla a soluta. Adipisci.
+    </p>
+  </article>
+</section>
